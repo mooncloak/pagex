@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+    - alias: "developer@mooncloak.com"
+      website: "https://mooncloak.codes"
+contact:
+    - alias: "developer@mooncloak.com"
+      website: "https://mooncloak.codes"
+title: "pagex"
+type: "software"
+abstract: "Kotlin Multiplatform pagination utilities."
+license: "Apache-2.0"
+keywords:
+    - "pagination"
+    - "page"
+    - "paging"
+    - "pagex"
+    - "pager"
+repository-code: "https://github.com/mooncloak/pagex"
+url: "https://github.com/mooncloak/pagex"

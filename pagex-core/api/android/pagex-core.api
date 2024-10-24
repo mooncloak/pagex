@@ -1,0 +1,751 @@
+public final class com/mooncloak/kodetools/pagex/CombinedDecodedPageCursor {
+	public static final field Companion Lcom/mooncloak/kodetools/pagex/CombinedDecodedPageCursor$Companion;
+	public fun <init> ()V
+	public fun <init> (Ljava/util/List;)V
+	public synthetic fun <init> (Ljava/util/List;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/util/List;
+	public final fun copy (Ljava/util/List;)Lcom/mooncloak/kodetools/pagex/CombinedDecodedPageCursor;
+	public static synthetic fun copy$default (Lcom/mooncloak/kodetools/pagex/CombinedDecodedPageCursor;Ljava/util/List;ILjava/lang/Object;)Lcom/mooncloak/kodetools/pagex/CombinedDecodedPageCursor;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getReferences ()Ljava/util/List;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public synthetic class com/mooncloak/kodetools/pagex/CombinedDecodedPageCursor$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/mooncloak/kodetools/pagex/CombinedDecodedPageCursor$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/mooncloak/kodetools/pagex/CombinedDecodedPageCursor;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/mooncloak/kodetools/pagex/CombinedDecodedPageCursor;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/mooncloak/kodetools/pagex/CombinedDecodedPageCursor$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/mooncloak/kodetools/pagex/CombinedDecodedPageCursorKt {
+	public static final fun encode (Lcom/mooncloak/kodetools/pagex/Cursor$Companion;Ljava/util/List;Lkotlinx/serialization/BinaryFormat;Lkotlinx/serialization/SerializationStrategy;)Ljava/lang/String;
+	public static final fun encode (Lcom/mooncloak/kodetools/pagex/Cursor$Companion;Ljava/util/List;Lkotlinx/serialization/StringFormat;Lkotlinx/serialization/SerializationStrategy;)Ljava/lang/String;
+	public static synthetic fun encode$default (Lcom/mooncloak/kodetools/pagex/Cursor$Companion;Ljava/util/List;Lkotlinx/serialization/BinaryFormat;Lkotlinx/serialization/SerializationStrategy;ILjava/lang/Object;)Ljava/lang/String;
+	public static synthetic fun encode$default (Lcom/mooncloak/kodetools/pagex/Cursor$Companion;Ljava/util/List;Lkotlinx/serialization/StringFormat;Lkotlinx/serialization/SerializationStrategy;ILjava/lang/Object;)Ljava/lang/String;
+}
+
+public final class com/mooncloak/kodetools/pagex/CombinedPagedDataSource : com/mooncloak/kodetools/pagex/PagedDataSource {
+	public fun <init> (Ljava/util/List;Ljava/lang/String;Lkotlinx/serialization/StringFormat;)V
+	public synthetic fun <init> (Ljava/util/List;Ljava/lang/String;Lkotlinx/serialization/StringFormat;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public fun getSourceId ()Ljava/lang/String;
+	public fun load (Lcom/mooncloak/kodetools/pagex/PageRequest;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+}
+
+public final class com/mooncloak/kodetools/pagex/Cursor {
+	public static final field Companion Lcom/mooncloak/kodetools/pagex/Cursor$Companion;
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lcom/mooncloak/kodetools/pagex/Cursor;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public final fun getValue ()Ljava/lang/String;
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public synthetic class com/mooncloak/kodetools/pagex/Cursor$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/mooncloak/kodetools/pagex/Cursor$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun deserialize-ogwuq1E (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/String;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public final fun serialize-qec1jY0 (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/String;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/mooncloak/kodetools/pagex/Cursor$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/mooncloak/kodetools/pagex/DefaultPageCollection : com/mooncloak/kodetools/pagex/PageCollection {
+	public static final field Companion Lcom/mooncloak/kodetools/pagex/DefaultPageCollection$Companion;
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2-pR_SMwk ()Ljava/lang/String;
+	public final fun component3 ()Ljava/lang/String;
+	public final fun component4 ()Ljava/util/List;
+	public final fun copy-AIdDANs (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)Lcom/mooncloak/kodetools/pagex/DefaultPageCollection;
+	public static synthetic fun copy-AIdDANs$default (Lcom/mooncloak/kodetools/pagex/DefaultPageCollection;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;ILjava/lang/Object;)Lcom/mooncloak/kodetools/pagex/DefaultPageCollection;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun get (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public fun getDataSourceId ()Ljava/lang/String;
+	public fun getId ()Ljava/lang/String;
+	public synthetic fun getPageCursor-G-h4ZwQ ()Ljava/lang/String;
+	public fun getPageCursor-pR_SMwk ()Ljava/lang/String;
+	public fun getPages ()Ljava/util/List;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public synthetic class com/mooncloak/kodetools/pagex/DefaultPageCollection$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public fun <init> (Lkotlinx/serialization/KSerializer;)V
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/mooncloak/kodetools/pagex/DefaultPageCollection;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/mooncloak/kodetools/pagex/DefaultPageCollection;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public final fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/mooncloak/kodetools/pagex/DefaultPageCollection$Companion {
+	public final fun serializer (Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/mooncloak/kodetools/pagex/DefaultPageKt {
+	public static final fun invoke-JnwqBto (Lcom/mooncloak/kodetools/pagex/ResolvedPage$Companion;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Lcom/mooncloak/kodetools/pagex/PageInfo;Lcom/mooncloak/kodetools/pagex/PageRequest;Lcom/mooncloak/kodetools/pagex/PageRequest;)Lcom/mooncloak/kodetools/pagex/DefaultResolvedPageWithRequestData;
+	public static synthetic fun invoke-JnwqBto$default (Lcom/mooncloak/kodetools/pagex/ResolvedPage$Companion;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Lcom/mooncloak/kodetools/pagex/PageInfo;Lcom/mooncloak/kodetools/pagex/PageRequest;Lcom/mooncloak/kodetools/pagex/PageRequest;ILjava/lang/Object;)Lcom/mooncloak/kodetools/pagex/DefaultResolvedPageWithRequestData;
+	public static final fun invoke-Qnfq1Kw (Lcom/mooncloak/kodetools/pagex/PageCollection$Companion;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)Lcom/mooncloak/kodetools/pagex/DefaultPageCollection;
+	public static synthetic fun invoke-Qnfq1Kw$default (Lcom/mooncloak/kodetools/pagex/PageCollection$Companion;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;ILjava/lang/Object;)Lcom/mooncloak/kodetools/pagex/DefaultPageCollection;
+	public static final fun invoke-YWYbMO4 (Lcom/mooncloak/kodetools/pagex/PagePlaceholder$Companion;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function1;)Lcom/mooncloak/kodetools/pagex/DefaultPagePlaceholder;
+	public static synthetic fun invoke-YWYbMO4$default (Lcom/mooncloak/kodetools/pagex/PagePlaceholder$Companion;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Lcom/mooncloak/kodetools/pagex/DefaultPagePlaceholder;
+	public static final fun invoke-b_kQuhk (Lcom/mooncloak/kodetools/pagex/ResolvedPage$Companion;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Lcom/mooncloak/kodetools/pagex/PageInfo;)Lcom/mooncloak/kodetools/pagex/DefaultResolvedPage;
+	public static synthetic fun invoke-b_kQuhk$default (Lcom/mooncloak/kodetools/pagex/ResolvedPage$Companion;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Lcom/mooncloak/kodetools/pagex/PageInfo;ILjava/lang/Object;)Lcom/mooncloak/kodetools/pagex/DefaultResolvedPage;
+}
+
+public final class com/mooncloak/kodetools/pagex/DefaultPagePlaceholder : com/mooncloak/kodetools/pagex/PagePlaceholder {
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function1;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2-G-h4ZwQ ()Ljava/lang/String;
+	public final fun component3 ()Ljava/lang/String;
+	public final fun copy-zXjTEz4 (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function1;)Lcom/mooncloak/kodetools/pagex/DefaultPagePlaceholder;
+	public static synthetic fun copy-zXjTEz4$default (Lcom/mooncloak/kodetools/pagex/DefaultPagePlaceholder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Lcom/mooncloak/kodetools/pagex/DefaultPagePlaceholder;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun get (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public fun getDataSourceId ()Ljava/lang/String;
+	public fun getId ()Ljava/lang/String;
+	public fun getPageCursor-G-h4ZwQ ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun resolve (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/mooncloak/kodetools/pagex/DefaultPagedDataSourceKt {
+	public static final fun of (Lcom/mooncloak/kodetools/pagex/PagedDataSource$Companion;Ljava/lang/String;Lcom/mooncloak/kodetools/pagex/PageLoadResult;)Lcom/mooncloak/kodetools/pagex/PagedDataSource;
+	public static final fun of (Lcom/mooncloak/kodetools/pagex/PagedDataSource$Companion;Ljava/lang/String;Lkotlin/jvm/functions/Function2;)Lcom/mooncloak/kodetools/pagex/PagedDataSource;
+	public static synthetic fun of$default (Lcom/mooncloak/kodetools/pagex/PagedDataSource$Companion;Ljava/lang/String;Lcom/mooncloak/kodetools/pagex/PageLoadResult;ILjava/lang/Object;)Lcom/mooncloak/kodetools/pagex/PagedDataSource;
+	public static synthetic fun of$default (Lcom/mooncloak/kodetools/pagex/PagedDataSource$Companion;Ljava/lang/String;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lcom/mooncloak/kodetools/pagex/PagedDataSource;
+}
+
+public final class com/mooncloak/kodetools/pagex/DefaultPagerLoader : com/mooncloak/kodetools/pagex/Pager$Loader {
+	public fun <init> (Lcom/mooncloak/kodetools/pagex/PagedDataSource;)V
+	public fun load (Lcom/mooncloak/kodetools/pagex/PageRequest;Lkotlinx/coroutines/CoroutineScope;)Lcom/mooncloak/kodetools/pagex/Pager;
+}
+
+public final class com/mooncloak/kodetools/pagex/DefaultResolvedPage : com/mooncloak/kodetools/pagex/ResolvedPage {
+	public static final field Companion Lcom/mooncloak/kodetools/pagex/DefaultResolvedPage$Companion;
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Lcom/mooncloak/kodetools/pagex/PageInfo;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Lcom/mooncloak/kodetools/pagex/PageInfo;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3-G-h4ZwQ ()Ljava/lang/String;
+	public final fun component4 ()Ljava/util/List;
+	public final fun component5 ()Lcom/mooncloak/kodetools/pagex/PageInfo;
+	public final fun copy-JiEzjS8 (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Lcom/mooncloak/kodetools/pagex/PageInfo;)Lcom/mooncloak/kodetools/pagex/DefaultResolvedPage;
+	public static synthetic fun copy-JiEzjS8$default (Lcom/mooncloak/kodetools/pagex/DefaultResolvedPage;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Lcom/mooncloak/kodetools/pagex/PageInfo;ILjava/lang/Object;)Lcom/mooncloak/kodetools/pagex/DefaultResolvedPage;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun get (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public fun getDataSourceId ()Ljava/lang/String;
+	public fun getId ()Ljava/lang/String;
+	public fun getInfo ()Lcom/mooncloak/kodetools/pagex/PageInfo;
+	public fun getItems ()Ljava/util/List;
+	public fun getPageCursor-G-h4ZwQ ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public synthetic class com/mooncloak/kodetools/pagex/DefaultResolvedPage$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public fun <init> (Lkotlinx/serialization/KSerializer;)V
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/mooncloak/kodetools/pagex/DefaultResolvedPage;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/mooncloak/kodetools/pagex/DefaultResolvedPage;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public final fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/mooncloak/kodetools/pagex/DefaultResolvedPage$Companion {
+	public final fun serializer (Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/mooncloak/kodetools/pagex/DefaultResolvedPageWithRequestData : com/mooncloak/kodetools/pagex/ResolvedPage {
+	public static final field Companion Lcom/mooncloak/kodetools/pagex/DefaultResolvedPageWithRequestData$Companion;
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Lcom/mooncloak/kodetools/pagex/PageInfo;Lcom/mooncloak/kodetools/pagex/PageRequest;Lcom/mooncloak/kodetools/pagex/PageRequest;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Lcom/mooncloak/kodetools/pagex/PageInfo;Lcom/mooncloak/kodetools/pagex/PageRequest;Lcom/mooncloak/kodetools/pagex/PageRequest;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3-G-h4ZwQ ()Ljava/lang/String;
+	public final fun component4 ()Ljava/util/List;
+	public final fun component5 ()Lcom/mooncloak/kodetools/pagex/PageInfo;
+	public final fun component6 ()Lcom/mooncloak/kodetools/pagex/PageRequest;
+	public final fun component7 ()Lcom/mooncloak/kodetools/pagex/PageRequest;
+	public final fun copy-dyKwVXM (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Lcom/mooncloak/kodetools/pagex/PageInfo;Lcom/mooncloak/kodetools/pagex/PageRequest;Lcom/mooncloak/kodetools/pagex/PageRequest;)Lcom/mooncloak/kodetools/pagex/DefaultResolvedPageWithRequestData;
+	public static synthetic fun copy-dyKwVXM$default (Lcom/mooncloak/kodetools/pagex/DefaultResolvedPageWithRequestData;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Lcom/mooncloak/kodetools/pagex/PageInfo;Lcom/mooncloak/kodetools/pagex/PageRequest;Lcom/mooncloak/kodetools/pagex/PageRequest;ILjava/lang/Object;)Lcom/mooncloak/kodetools/pagex/DefaultResolvedPageWithRequestData;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun get (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public final fun getActual ()Lcom/mooncloak/kodetools/pagex/PageRequest;
+	public fun getDataSourceId ()Ljava/lang/String;
+	public fun getId ()Ljava/lang/String;
+	public fun getInfo ()Lcom/mooncloak/kodetools/pagex/PageInfo;
+	public fun getItems ()Ljava/util/List;
+	public final fun getOriginal ()Lcom/mooncloak/kodetools/pagex/PageRequest;
+	public fun getPageCursor-G-h4ZwQ ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public synthetic class com/mooncloak/kodetools/pagex/DefaultResolvedPageWithRequestData$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public fun <init> (Lkotlinx/serialization/KSerializer;Lkotlinx/serialization/KSerializer;Lkotlinx/serialization/KSerializer;)V
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/mooncloak/kodetools/pagex/DefaultResolvedPageWithRequestData;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/mooncloak/kodetools/pagex/DefaultResolvedPageWithRequestData;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public final fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/mooncloak/kodetools/pagex/DefaultResolvedPageWithRequestData$Companion {
+	public final fun serializer (Lkotlinx/serialization/KSerializer;Lkotlinx/serialization/KSerializer;Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/mooncloak/kodetools/pagex/Direction : java/lang/Enum {
+	public static final field After Lcom/mooncloak/kodetools/pagex/Direction;
+	public static final field Before Lcom/mooncloak/kodetools/pagex/Direction;
+	public static final field Companion Lcom/mooncloak/kodetools/pagex/Direction$Companion;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public final fun getSerialName ()Ljava/lang/String;
+	public static fun valueOf (Ljava/lang/String;)Lcom/mooncloak/kodetools/pagex/Direction;
+	public static fun values ()[Lcom/mooncloak/kodetools/pagex/Direction;
+}
+
+public final class com/mooncloak/kodetools/pagex/Direction$Companion {
+	public final fun get (Ljava/lang/String;)Lcom/mooncloak/kodetools/pagex/Direction;
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/mooncloak/kodetools/pagex/EmptyPagedDataSource : com/mooncloak/kodetools/pagex/PagedDataSource {
+	public fun <init> ()V
+	public fun <init> (Ljava/lang/String;)V
+	public synthetic fun <init> (Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public fun getSourceId ()Ljava/lang/String;
+	public fun load (Lcom/mooncloak/kodetools/pagex/PageRequest;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+}
+
+public final class com/mooncloak/kodetools/pagex/ErrorResult : com/mooncloak/kodetools/pagex/PageLoadResult {
+	public fun <init> (Ljava/lang/Throwable;)V
+	public final fun component1 ()Ljava/lang/Throwable;
+	public final fun copy (Ljava/lang/Throwable;)Lcom/mooncloak/kodetools/pagex/ErrorResult;
+	public static synthetic fun copy$default (Lcom/mooncloak/kodetools/pagex/ErrorResult;Ljava/lang/Throwable;ILjava/lang/Object;)Lcom/mooncloak/kodetools/pagex/ErrorResult;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getCause ()Ljava/lang/Throwable;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public abstract interface annotation class com/mooncloak/kodetools/pagex/ExperimentalPaginationAPI : java/lang/annotation/Annotation {
+}
+
+public final class com/mooncloak/kodetools/pagex/InMemoryIndexBasedPagedDataSource : com/mooncloak/kodetools/pagex/PagedDataSource {
+	public fun <init> (Ljava/lang/String;Ljava/util/List;Lkotlinx/serialization/StringFormat;Lkotlin/jvm/functions/Function2;)V
+	public fun getSourceId ()Ljava/lang/String;
+	public final fun getValues ()Ljava/util/List;
+	public fun load (Lcom/mooncloak/kodetools/pagex/PageRequest;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+}
+
+public final class com/mooncloak/kodetools/pagex/InMemoryIndexBasedPagedDataSourceKt {
+	public static final fun of (Lcom/mooncloak/kodetools/pagex/PagedDataSource$Companion;Ljava/util/Collection;Ljava/lang/String;Lkotlinx/serialization/StringFormat;Lkotlin/jvm/functions/Function2;)Lcom/mooncloak/kodetools/pagex/InMemoryIndexBasedPagedDataSource;
+	public static synthetic fun of$default (Lcom/mooncloak/kodetools/pagex/PagedDataSource$Companion;Ljava/util/Collection;Ljava/lang/String;Lkotlinx/serialization/StringFormat;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lcom/mooncloak/kodetools/pagex/InMemoryIndexBasedPagedDataSource;
+}
+
+public final class com/mooncloak/kodetools/pagex/InvalidResult : com/mooncloak/kodetools/pagex/PageLoadResult {
+	public static final field INSTANCE Lcom/mooncloak/kodetools/pagex/InvalidResult;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public abstract interface class com/mooncloak/kodetools/pagex/LoadState {
+	public abstract fun getEndOfPaginationReached ()Z
+}
+
+public final class com/mooncloak/kodetools/pagex/LoadState$Complete : com/mooncloak/kodetools/pagex/LoadState$NotLoading {
+	public static final field INSTANCE Lcom/mooncloak/kodetools/pagex/LoadState$Complete;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getEndOfPaginationReached ()Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/mooncloak/kodetools/pagex/LoadState$Error : com/mooncloak/kodetools/pagex/LoadState {
+	public fun <init> (Ljava/lang/Throwable;)V
+	public final fun component1 ()Ljava/lang/Throwable;
+	public final fun copy (Ljava/lang/Throwable;)Lcom/mooncloak/kodetools/pagex/LoadState$Error;
+	public static synthetic fun copy$default (Lcom/mooncloak/kodetools/pagex/LoadState$Error;Ljava/lang/Throwable;ILjava/lang/Object;)Lcom/mooncloak/kodetools/pagex/LoadState$Error;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getCause ()Ljava/lang/Throwable;
+	public fun getEndOfPaginationReached ()Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/mooncloak/kodetools/pagex/LoadState$Incomplete : com/mooncloak/kodetools/pagex/LoadState$NotLoading {
+	public static final field INSTANCE Lcom/mooncloak/kodetools/pagex/LoadState$Incomplete;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getEndOfPaginationReached ()Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/mooncloak/kodetools/pagex/LoadState$Loading : com/mooncloak/kodetools/pagex/LoadState {
+	public static final field INSTANCE Lcom/mooncloak/kodetools/pagex/LoadState$Loading;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getEndOfPaginationReached ()Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public abstract interface class com/mooncloak/kodetools/pagex/LoadState$NotLoading : com/mooncloak/kodetools/pagex/LoadState {
+}
+
+public final class com/mooncloak/kodetools/pagex/LoadType : java/lang/Enum {
+	public static final field Append Lcom/mooncloak/kodetools/pagex/LoadType;
+	public static final field Companion Lcom/mooncloak/kodetools/pagex/LoadType$Companion;
+	public static final field Prepend Lcom/mooncloak/kodetools/pagex/LoadType;
+	public static final field Refresh Lcom/mooncloak/kodetools/pagex/LoadType;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public final fun getSerialName ()Ljava/lang/String;
+	public static fun valueOf (Ljava/lang/String;)Lcom/mooncloak/kodetools/pagex/LoadType;
+	public static fun values ()[Lcom/mooncloak/kodetools/pagex/LoadType;
+}
+
+public final class com/mooncloak/kodetools/pagex/LoadType$Companion {
+	public final fun get (Ljava/lang/String;)Lcom/mooncloak/kodetools/pagex/LoadType;
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/mooncloak/kodetools/pagex/OffsetDecodedCursor {
+	public static final field Companion Lcom/mooncloak/kodetools/pagex/OffsetDecodedCursor$Companion;
+	public synthetic fun <init> (IILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1-pVg5ArA ()I
+	public final fun component2-pVg5ArA ()I
+	public final fun copy-feOb9K0 (II)Lcom/mooncloak/kodetools/pagex/OffsetDecodedCursor;
+	public static synthetic fun copy-feOb9K0$default (Lcom/mooncloak/kodetools/pagex/OffsetDecodedCursor;IIILjava/lang/Object;)Lcom/mooncloak/kodetools/pagex/OffsetDecodedCursor;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getCount-pVg5ArA ()I
+	public final fun getOffset-pVg5ArA ()I
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public synthetic class com/mooncloak/kodetools/pagex/OffsetDecodedCursor$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/mooncloak/kodetools/pagex/OffsetDecodedCursor$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/mooncloak/kodetools/pagex/OffsetDecodedCursor;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/mooncloak/kodetools/pagex/OffsetDecodedCursor;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/mooncloak/kodetools/pagex/OffsetDecodedCursor$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/mooncloak/kodetools/pagex/OffsetDecodedCursorKt {
+	public static final fun encode-gd2BlFg (Lcom/mooncloak/kodetools/pagex/Cursor$Companion;IILkotlinx/serialization/BinaryFormat;)Ljava/lang/String;
+	public static final fun encode-gd2BlFg (Lcom/mooncloak/kodetools/pagex/Cursor$Companion;IILkotlinx/serialization/StringFormat;)Ljava/lang/String;
+	public static synthetic fun encode-gd2BlFg$default (Lcom/mooncloak/kodetools/pagex/Cursor$Companion;IILkotlinx/serialization/BinaryFormat;ILjava/lang/Object;)Ljava/lang/String;
+	public static synthetic fun encode-gd2BlFg$default (Lcom/mooncloak/kodetools/pagex/Cursor$Companion;IILkotlinx/serialization/StringFormat;ILjava/lang/Object;)Ljava/lang/String;
+}
+
+public abstract interface class com/mooncloak/kodetools/pagex/Page : com/mooncloak/kodetools/pagex/PageLoadResult {
+	public static final field Companion Lcom/mooncloak/kodetools/pagex/Page$Companion;
+	public abstract fun get (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun getDataSourceId ()Ljava/lang/String;
+	public abstract fun getId ()Ljava/lang/String;
+	public abstract fun getPageCursor-G-h4ZwQ ()Ljava/lang/String;
+}
+
+public final class com/mooncloak/kodetools/pagex/Page$Companion {
+}
+
+public abstract interface class com/mooncloak/kodetools/pagex/PageCollection : com/mooncloak/kodetools/pagex/Page {
+	public static final field Companion Lcom/mooncloak/kodetools/pagex/PageCollection$Companion;
+	public abstract fun get (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun getDataSourceId ()Ljava/lang/String;
+	public abstract fun getId ()Ljava/lang/String;
+	public abstract fun getPageCursor-pR_SMwk ()Ljava/lang/String;
+	public abstract fun getPages ()Ljava/util/List;
+}
+
+public final class com/mooncloak/kodetools/pagex/PageCollection$Companion {
+	public final fun serializer (Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/mooncloak/kodetools/pagex/PageCollection$DefaultImpls {
+	public static fun get (Lcom/mooncloak/kodetools/pagex/PageCollection;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+}
+
+public final class com/mooncloak/kodetools/pagex/PageCollectionSerializer : kotlinx/serialization/KSerializer {
+	public fun <init> (Lkotlinx/serialization/KSerializer;)V
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/mooncloak/kodetools/pagex/PageCollection;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/mooncloak/kodetools/pagex/PageCollection;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+}
+
+public final class com/mooncloak/kodetools/pagex/PageInfo {
+	public static final field Companion Lcom/mooncloak/kodetools/pagex/PageInfo$Companion;
+	public synthetic fun <init> (Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Lkotlin/UInt;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public synthetic fun <init> (Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Lkotlin/UInt;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/Boolean;
+	public final fun component2 ()Ljava/lang/Boolean;
+	public final fun component3-G-h4ZwQ ()Ljava/lang/String;
+	public final fun component4-G-h4ZwQ ()Ljava/lang/String;
+	public final fun component5-0hXNFcg ()Lkotlin/UInt;
+	public final fun copy-c3t1tRA (Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Lkotlin/UInt;)Lcom/mooncloak/kodetools/pagex/PageInfo;
+	public static synthetic fun copy-c3t1tRA$default (Lcom/mooncloak/kodetools/pagex/PageInfo;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Lkotlin/UInt;ILjava/lang/Object;)Lcom/mooncloak/kodetools/pagex/PageInfo;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getFirstCursor-G-h4ZwQ ()Ljava/lang/String;
+	public final fun getHasNext ()Ljava/lang/Boolean;
+	public final fun getHasPrevious ()Ljava/lang/Boolean;
+	public final fun getLastCursor-G-h4ZwQ ()Ljava/lang/String;
+	public final fun getTotalCount-0hXNFcg ()Lkotlin/UInt;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public synthetic class com/mooncloak/kodetools/pagex/PageInfo$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/mooncloak/kodetools/pagex/PageInfo$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/mooncloak/kodetools/pagex/PageInfo;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/mooncloak/kodetools/pagex/PageInfo;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/mooncloak/kodetools/pagex/PageInfo$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/mooncloak/kodetools/pagex/PageKt {
+	public static final fun toResolvedPage (Lcom/mooncloak/kodetools/pagex/Page;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+}
+
+public abstract interface class com/mooncloak/kodetools/pagex/PageLoadResult {
+	public static final field Companion Lcom/mooncloak/kodetools/pagex/PageLoadResult$Companion;
+}
+
+public final class com/mooncloak/kodetools/pagex/PageLoadResult$Companion {
+}
+
+public final class com/mooncloak/kodetools/pagex/PageLoadResultKt {
+	public static final fun emptyPage-JiEzjS8 (Lcom/mooncloak/kodetools/pagex/PageLoadResult$Companion;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/mooncloak/kodetools/pagex/PageInfo;)Lcom/mooncloak/kodetools/pagex/DefaultResolvedPage;
+	public static synthetic fun emptyPage-JiEzjS8$default (Lcom/mooncloak/kodetools/pagex/PageLoadResult$Companion;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/mooncloak/kodetools/pagex/PageInfo;ILjava/lang/Object;)Lcom/mooncloak/kodetools/pagex/DefaultResolvedPage;
+	public static final fun error (Lcom/mooncloak/kodetools/pagex/PageLoadResult$Companion;Ljava/lang/Throwable;)Lcom/mooncloak/kodetools/pagex/ErrorResult;
+	public static final fun exceptionOrNull (Lcom/mooncloak/kodetools/pagex/PageLoadResult;)Ljava/lang/Throwable;
+	public static final fun getOrNull (Lcom/mooncloak/kodetools/pagex/PageLoadResult;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public static final fun getOrThrow (Lcom/mooncloak/kodetools/pagex/PageLoadResult;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public static final fun invalid (Lcom/mooncloak/kodetools/pagex/PageLoadResult$Companion;)Lcom/mooncloak/kodetools/pagex/InvalidResult;
+	public static final fun isSuccess (Lcom/mooncloak/kodetools/pagex/PageLoadResult;)Z
+	public static final fun page-JnwqBto (Lcom/mooncloak/kodetools/pagex/PageLoadResult$Companion;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/mooncloak/kodetools/pagex/PageInfo;Ljava/util/List;Lcom/mooncloak/kodetools/pagex/PageRequest;Lcom/mooncloak/kodetools/pagex/PageRequest;)Lcom/mooncloak/kodetools/pagex/DefaultResolvedPageWithRequestData;
+	public static synthetic fun page-JnwqBto$default (Lcom/mooncloak/kodetools/pagex/PageLoadResult$Companion;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/mooncloak/kodetools/pagex/PageInfo;Ljava/util/List;Lcom/mooncloak/kodetools/pagex/PageRequest;Lcom/mooncloak/kodetools/pagex/PageRequest;ILjava/lang/Object;)Lcom/mooncloak/kodetools/pagex/DefaultResolvedPageWithRequestData;
+	public static final fun page-b_kQuhk (Lcom/mooncloak/kodetools/pagex/PageLoadResult$Companion;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/mooncloak/kodetools/pagex/PageInfo;Ljava/util/List;)Lcom/mooncloak/kodetools/pagex/DefaultResolvedPage;
+	public static synthetic fun page-b_kQuhk$default (Lcom/mooncloak/kodetools/pagex/PageLoadResult$Companion;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/mooncloak/kodetools/pagex/PageInfo;Ljava/util/List;ILjava/lang/Object;)Lcom/mooncloak/kodetools/pagex/DefaultResolvedPage;
+	public static final fun pageCollection-Qnfq1Kw (Lcom/mooncloak/kodetools/pagex/PageLoadResult$Companion;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;)Lcom/mooncloak/kodetools/pagex/DefaultPageCollection;
+	public static synthetic fun pageCollection-Qnfq1Kw$default (Lcom/mooncloak/kodetools/pagex/PageLoadResult$Companion;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;ILjava/lang/Object;)Lcom/mooncloak/kodetools/pagex/DefaultPageCollection;
+	public static final fun pagePlaceholder-YWYbMO4 (Lcom/mooncloak/kodetools/pagex/PageLoadResult$Companion;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function1;)Lcom/mooncloak/kodetools/pagex/DefaultPagePlaceholder;
+	public static synthetic fun pagePlaceholder-YWYbMO4$default (Lcom/mooncloak/kodetools/pagex/PageLoadResult$Companion;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Lcom/mooncloak/kodetools/pagex/DefaultPagePlaceholder;
+}
+
+public abstract interface class com/mooncloak/kodetools/pagex/PagePlaceholder : com/mooncloak/kodetools/pagex/Page {
+	public static final field Companion Lcom/mooncloak/kodetools/pagex/PagePlaceholder$Companion;
+	public abstract fun get (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun getDataSourceId ()Ljava/lang/String;
+	public abstract fun getId ()Ljava/lang/String;
+	public abstract fun getPageCursor-G-h4ZwQ ()Ljava/lang/String;
+	public abstract fun resolve (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+}
+
+public final class com/mooncloak/kodetools/pagex/PagePlaceholder$Companion {
+}
+
+public final class com/mooncloak/kodetools/pagex/PagePlaceholder$DefaultImpls {
+	public static fun get (Lcom/mooncloak/kodetools/pagex/PagePlaceholder;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+}
+
+public final class com/mooncloak/kodetools/pagex/PageReference {
+	public static final field Companion Lcom/mooncloak/kodetools/pagex/PageReference$Companion;
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Lcom/mooncloak/kodetools/pagex/PageInfo;)V
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Lcom/mooncloak/kodetools/pagex/PageInfo;
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Lcom/mooncloak/kodetools/pagex/PageInfo;)Lcom/mooncloak/kodetools/pagex/PageReference;
+	public static synthetic fun copy$default (Lcom/mooncloak/kodetools/pagex/PageReference;Ljava/lang/String;Ljava/lang/String;Lcom/mooncloak/kodetools/pagex/PageInfo;ILjava/lang/Object;)Lcom/mooncloak/kodetools/pagex/PageReference;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getDataSourceId ()Ljava/lang/String;
+	public final fun getId ()Ljava/lang/String;
+	public final fun getInfo ()Lcom/mooncloak/kodetools/pagex/PageInfo;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public synthetic class com/mooncloak/kodetools/pagex/PageReference$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/mooncloak/kodetools/pagex/PageReference$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/mooncloak/kodetools/pagex/PageReference;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/mooncloak/kodetools/pagex/PageReference;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/mooncloak/kodetools/pagex/PageReference$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/mooncloak/kodetools/pagex/PageRequest {
+	public static final field Companion Lcom/mooncloak/kodetools/pagex/PageRequest$Companion;
+	public static final field DEFAULT_COUNT I
+	public synthetic fun <init> (Ljava/lang/Object;Lcom/mooncloak/kodetools/pagex/Direction;Ljava/lang/String;ILcom/mooncloak/kodetools/pagex/SortOptions;Ljava/lang/Object;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public synthetic fun <init> (Ljava/lang/Object;Lcom/mooncloak/kodetools/pagex/Direction;Ljava/lang/String;ILcom/mooncloak/kodetools/pagex/SortOptions;Ljava/lang/Object;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/lang/Object;
+	public final fun component2 ()Lcom/mooncloak/kodetools/pagex/Direction;
+	public final fun component3-G-h4ZwQ ()Ljava/lang/String;
+	public final fun component4-pVg5ArA ()I
+	public final fun component5 ()Lcom/mooncloak/kodetools/pagex/SortOptions;
+	public final fun component6 ()Ljava/lang/Object;
+	public final fun copy-UpFlhsA (Ljava/lang/Object;Lcom/mooncloak/kodetools/pagex/Direction;Ljava/lang/String;ILcom/mooncloak/kodetools/pagex/SortOptions;Ljava/lang/Object;)Lcom/mooncloak/kodetools/pagex/PageRequest;
+	public static synthetic fun copy-UpFlhsA$default (Lcom/mooncloak/kodetools/pagex/PageRequest;Ljava/lang/Object;Lcom/mooncloak/kodetools/pagex/Direction;Ljava/lang/String;ILcom/mooncloak/kodetools/pagex/SortOptions;Ljava/lang/Object;ILjava/lang/Object;)Lcom/mooncloak/kodetools/pagex/PageRequest;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getCount-pVg5ArA ()I
+	public final fun getCursor-G-h4ZwQ ()Ljava/lang/String;
+	public final fun getData ()Ljava/lang/Object;
+	public final fun getDirection ()Lcom/mooncloak/kodetools/pagex/Direction;
+	public final fun getFilters ()Ljava/lang/Object;
+	public final fun getSort ()Lcom/mooncloak/kodetools/pagex/SortOptions;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public synthetic class com/mooncloak/kodetools/pagex/PageRequest$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public fun <init> (Lkotlinx/serialization/KSerializer;Lkotlinx/serialization/KSerializer;)V
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/mooncloak/kodetools/pagex/PageRequest;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/mooncloak/kodetools/pagex/PageRequest;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public final fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/mooncloak/kodetools/pagex/PageRequest$Companion {
+	public final fun serializer (Lkotlinx/serialization/KSerializer;Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+}
+
+public abstract interface class com/mooncloak/kodetools/pagex/PagedDataSource {
+	public static final field Companion Lcom/mooncloak/kodetools/pagex/PagedDataSource$Companion;
+	public abstract fun getSourceId ()Ljava/lang/String;
+	public abstract fun load (Lcom/mooncloak/kodetools/pagex/PageRequest;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+}
+
+public final class com/mooncloak/kodetools/pagex/PagedDataSource$Companion {
+}
+
+public final class com/mooncloak/kodetools/pagex/PagedDataSourceKt {
+	public static final fun after-D-06Gig (Lcom/mooncloak/kodetools/pagex/PagedDataSource;Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public static final fun before-D-06Gig (Lcom/mooncloak/kodetools/pagex/PagedDataSource;Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+}
+
+public abstract interface class com/mooncloak/kodetools/pagex/Pager {
+	public static final field Companion Lcom/mooncloak/kodetools/pagex/Pager$Companion;
+	public abstract fun append (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun getFlow ()Lkotlinx/coroutines/flow/Flow;
+	public abstract fun prepend (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun refresh (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+}
+
+public final class com/mooncloak/kodetools/pagex/Pager$Companion {
+}
+
+public abstract interface class com/mooncloak/kodetools/pagex/Pager$Loader {
+	public static final field Companion Lcom/mooncloak/kodetools/pagex/Pager$Loader$Companion;
+	public abstract fun load (Lcom/mooncloak/kodetools/pagex/PageRequest;Lkotlinx/coroutines/CoroutineScope;)Lcom/mooncloak/kodetools/pagex/Pager;
+}
+
+public final class com/mooncloak/kodetools/pagex/Pager$Loader$Companion {
+}
+
+public final class com/mooncloak/kodetools/pagex/PagerKt {
+	public static final fun awaitLoad (Lcom/mooncloak/kodetools/pagex/Pager$Loader;Lcom/mooncloak/kodetools/pagex/PageRequest;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public static final fun create (Lcom/mooncloak/kodetools/pagex/Pager$Loader$Companion;Lcom/mooncloak/kodetools/pagex/PagedDataSource;)Lcom/mooncloak/kodetools/pagex/Pager$Loader;
+}
+
+public final class com/mooncloak/kodetools/pagex/PagerStateModel {
+	public fun <init> ()V
+	public fun <init> (Ljava/util/List;Lcom/mooncloak/kodetools/pagex/LoadState;Lcom/mooncloak/kodetools/pagex/LoadState;Lcom/mooncloak/kodetools/pagex/LoadState;)V
+	public synthetic fun <init> (Ljava/util/List;Lcom/mooncloak/kodetools/pagex/LoadState;Lcom/mooncloak/kodetools/pagex/LoadState;Lcom/mooncloak/kodetools/pagex/LoadState;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1 ()Ljava/util/List;
+	public final fun component2 ()Lcom/mooncloak/kodetools/pagex/LoadState;
+	public final fun component3 ()Lcom/mooncloak/kodetools/pagex/LoadState;
+	public final fun component4 ()Lcom/mooncloak/kodetools/pagex/LoadState;
+	public final fun copy (Ljava/util/List;Lcom/mooncloak/kodetools/pagex/LoadState;Lcom/mooncloak/kodetools/pagex/LoadState;Lcom/mooncloak/kodetools/pagex/LoadState;)Lcom/mooncloak/kodetools/pagex/PagerStateModel;
+	public static synthetic fun copy$default (Lcom/mooncloak/kodetools/pagex/PagerStateModel;Ljava/util/List;Lcom/mooncloak/kodetools/pagex/LoadState;Lcom/mooncloak/kodetools/pagex/LoadState;Lcom/mooncloak/kodetools/pagex/LoadState;ILjava/lang/Object;)Lcom/mooncloak/kodetools/pagex/PagerStateModel;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getAppend ()Lcom/mooncloak/kodetools/pagex/LoadState;
+	public final fun getPages ()Ljava/util/List;
+	public final fun getPrepend ()Lcom/mooncloak/kodetools/pagex/LoadState;
+	public final fun getRefresh ()Lcom/mooncloak/kodetools/pagex/LoadState;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public abstract interface class com/mooncloak/kodetools/pagex/ResolvedPage : com/mooncloak/kodetools/pagex/Page {
+	public static final field Companion Lcom/mooncloak/kodetools/pagex/ResolvedPage$Companion;
+	public abstract fun get (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public abstract fun getDataSourceId ()Ljava/lang/String;
+	public abstract fun getId ()Ljava/lang/String;
+	public abstract fun getInfo ()Lcom/mooncloak/kodetools/pagex/PageInfo;
+	public abstract fun getItems ()Ljava/util/List;
+	public abstract fun getPageCursor-G-h4ZwQ ()Ljava/lang/String;
+}
+
+public final class com/mooncloak/kodetools/pagex/ResolvedPage$Companion {
+	public final fun serializer (Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/mooncloak/kodetools/pagex/ResolvedPage$DefaultImpls {
+	public static fun get (Lcom/mooncloak/kodetools/pagex/ResolvedPage;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public static fun getPageCursor-G-h4ZwQ (Lcom/mooncloak/kodetools/pagex/ResolvedPage;)Ljava/lang/String;
+}
+
+public final class com/mooncloak/kodetools/pagex/ResolvedPageSerializer : kotlinx/serialization/KSerializer {
+	public fun <init> (Lkotlinx/serialization/KSerializer;)V
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/mooncloak/kodetools/pagex/ResolvedPage;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/mooncloak/kodetools/pagex/ResolvedPage;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+}
+
+public final class com/mooncloak/kodetools/pagex/SortOptions {
+	public static final field Companion Lcom/mooncloak/kodetools/pagex/SortOptions$Companion;
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1-f4o1s9I ()Ljava/lang/String;
+	public final fun component2-PSbvVt4 ()Ljava/lang/String;
+	public final fun copy-cdpq14k (Ljava/lang/String;Ljava/lang/String;)Lcom/mooncloak/kodetools/pagex/SortOptions;
+	public static synthetic fun copy-cdpq14k$default (Lcom/mooncloak/kodetools/pagex/SortOptions;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lcom/mooncloak/kodetools/pagex/SortOptions;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getOrder-PSbvVt4 ()Ljava/lang/String;
+	public final fun getType-f4o1s9I ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public synthetic class com/mooncloak/kodetools/pagex/SortOptions$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/mooncloak/kodetools/pagex/SortOptions$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Lcom/mooncloak/kodetools/pagex/SortOptions;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Lcom/mooncloak/kodetools/pagex/SortOptions;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/mooncloak/kodetools/pagex/SortOptions$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/mooncloak/kodetools/pagex/SortOrder {
+	public static final field Companion Lcom/mooncloak/kodetools/pagex/SortOrder$Companion;
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lcom/mooncloak/kodetools/pagex/SortOrder;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public final fun getValue ()Ljava/lang/String;
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public synthetic class com/mooncloak/kodetools/pagex/SortOrder$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/mooncloak/kodetools/pagex/SortOrder$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun deserialize-tknd8ns (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/String;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public final fun serialize-pl_8Cps (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/String;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/mooncloak/kodetools/pagex/SortOrder$Companion {
+	public final fun getAscending-0ViYCOQ ()Ljava/lang/String;
+	public final fun getClosest-0ViYCOQ ()Ljava/lang/String;
+	public final fun getDescending-0ViYCOQ ()Ljava/lang/String;
+	public final fun getFurthest-0ViYCOQ ()Ljava/lang/String;
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/mooncloak/kodetools/pagex/SortType {
+	public static final field Companion Lcom/mooncloak/kodetools/pagex/SortType$Companion;
+	public static final synthetic fun box-impl (Ljava/lang/String;)Lcom/mooncloak/kodetools/pagex/SortType;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public final fun getValue ()Ljava/lang/String;
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public synthetic class com/mooncloak/kodetools/pagex/SortType$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Lcom/mooncloak/kodetools/pagex/SortType$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun deserialize-Bf8138Y (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/String;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public final fun serialize-FfbNHoI (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/String;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/mooncloak/kodetools/pagex/SortType$Companion {
+	public final fun getAlphabetical-f4o1s9I ()Ljava/lang/String;
+	public final fun getChronological-f4o1s9I ()Ljava/lang/String;
+	public final fun getDistance-f4o1s9I ()Ljava/lang/String;
+	public final fun getRelevance-f4o1s9I ()Ljava/lang/String;
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
