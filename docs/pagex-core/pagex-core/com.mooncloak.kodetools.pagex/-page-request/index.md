@@ -7,9 +7,15 @@
 
 @Serializable
 
-data class [PageRequest](index.md)&lt;[Data](index.md) : [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html), [Filter](index.md) : [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)&gt;
+data class [PageRequest](index.md)&lt;[Data](index.md) : [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html), [Filter](index.md) : [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)&gt;(val data: [Data](index.md)? = null, val direction: [Direction](../-direction/index.md) = Direction.After, val cursor: [Cursor](../-cursor/index.md)? = null, val count: [UInt](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-int/index.html) = DEFAULT_COUNT, val sort: [SortOptions](../-sort-options/index.md)? = null, val filters: [Filter](index.md)? = null)
 
 Represents a request to a paginated data source.
+
+## Constructors
+
+| | |
+|---|---|
+| [PageRequest](-page-request.md) | [common]<br>constructor(data: [Data](index.md)? = null, direction: [Direction](../-direction/index.md) = Direction.After, cursor: [Cursor](../-cursor/index.md)? = null, count: [UInt](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-u-int/index.html) = DEFAULT_COUNT, sort: [SortOptions](../-sort-options/index.md)? = null, filters: [Filter](index.md)? = null) |
 
 ## Types
 

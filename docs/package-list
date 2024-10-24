@@ -166,6 +166,7 @@ $dokka.location:com.mooncloak.kodetools.pagex/PageReference/info/#/PointingToDec
 $dokka.location:com.mooncloak.kodetools.pagex/PageRequest.Companion///PointingToDeclaration/pagex-core/pagex-core/com.mooncloak.kodetools.pagex/-page-request/-companion/index.md
 $dokka.location:com.mooncloak.kodetools.pagex/PageRequest.Companion/DEFAULT_COUNT/#/PointingToDeclaration/pagex-core/pagex-core/com.mooncloak.kodetools.pagex/-page-request/-companion/-d-e-f-a-u-l-t_-c-o-u-n-t.md
 $dokka.location:com.mooncloak.kodetools.pagex/PageRequest///PointingToDeclaration/pagex-core/pagex-core/com.mooncloak.kodetools.pagex/-page-request/index.md
+$dokka.location:com.mooncloak.kodetools.pagex/PageRequest/PageRequest/#TypeParam(bounds=[kotlin.Any])?#com.mooncloak.kodetools.pagex.Direction#com.mooncloak.kodetools.pagex.Cursor?#kotlin.UInt#com.mooncloak.kodetools.pagex.SortOptions?#TypeParam(bounds=[kotlin.Any])?/PointingToDeclaration/pagex-core/pagex-core/com.mooncloak.kodetools.pagex/-page-request/-page-request.md
 $dokka.location:com.mooncloak.kodetools.pagex/PageRequest/count/#/PointingToDeclaration/pagex-core/pagex-core/com.mooncloak.kodetools.pagex/-page-request/count.md
 $dokka.location:com.mooncloak.kodetools.pagex/PageRequest/cursor/#/PointingToDeclaration/pagex-core/pagex-core/com.mooncloak.kodetools.pagex/-page-request/cursor.md
 $dokka.location:com.mooncloak.kodetools.pagex/PageRequest/data/#/PointingToDeclaration/pagex-core/pagex-core/com.mooncloak.kodetools.pagex/-page-request/data.md
