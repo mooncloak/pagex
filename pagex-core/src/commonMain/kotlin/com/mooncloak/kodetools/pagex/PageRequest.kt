@@ -21,7 +21,7 @@ import kotlinx.serialization.Serializable
  */
 @ExperimentalPaginationAPI
 @Serializable
-public data class PageRequest<Data : Any, Filter : Any> @PublishedApi internal constructor(
+public data class PageRequest<Data : Any, Filter : Any> public constructor(
     @SerialName(value = "data") public val data: Data? = null,
     @SerialName(value = "direction") public val direction: Direction = Direction.After,
     @SerialName(value = "cursor") public val cursor: Cursor? = null,
